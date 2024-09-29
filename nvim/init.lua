@@ -107,6 +107,8 @@ vim.opt.relativenumber = true
 -- Enable mouse mode, can be useful for resizing splits for example!
 vim.opt.mouse = "a"
 
+vim.o.autochdir = true
+vim.o.wrap = true
 -- Don't show the mode, since it's already in the status line
 vim.opt.showmode = false
 
@@ -366,6 +368,24 @@ require("lazy").setup({
 			end, { desc = "[S]earch [N]eovim files" })
 		end,
 	},
+	-- ND
+	{
+		"akinsho/toggleterm.nvim",
+		version = "*",
+		config = function()
+			require("toggleterm").setup({
+				size = 20,
+				open_mapping = [[<c-t>]],
+				autochdir = true,
+				direction = "float",
+				hide_numbers = true,
+				float_opts = {
+					border = "curved",
+					title_pos = "",
+				},
+			})
+		end,
+	},
 
 	-- LSP Plugins
 	{
@@ -405,8 +425,8 @@ require("lazy").setup({
 				dashboard.button("e", "   New file", ":ene <BAR> startinsert <CR>"),
 				dashboard.button("SPC ff", "   Find file", ":Telescope find_files<CR>"),
 				dashboard.button("SPC fg", "󰈞   Find Word", ":Telescope live_grep<CR>"),
-				dashboard.button("s", "  Settings", ":e ~/.config/nvim/init.lua<CR>"),
 				dashboard.button("SPC f.", "󱀸   Frequent Files", ":Telescope oldfiles<CR>"),
+				dashboard.button("s", "  Settings", ":e ~/.config/nvim/init.lua<CR>"),
 				dashboard.button("q", "󰈆   Quit NVIM", ":qa<CR>"),
 			}
 
