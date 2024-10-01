@@ -109,6 +109,7 @@ vim.opt.mouse = "a"
 
 vim.o.autochdir = true
 vim.o.wrap = true
+vim.o.linebreak = true
 -- Don't show the mode, since it's already in the status line
 vim.opt.showmode = false
 
