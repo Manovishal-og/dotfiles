@@ -1,0 +1,35 @@
+
+{
+    "modules-left": ["clock"],
+    "modules-right": ["network", "cpu", "memory", "temperature", "battery"],
+
+    "cpu": {
+        "format": " {usage}%",
+        "tooltip": false
+    },
+    "memory": {
+        "format": " {percentage}%",
+        "tooltip": false
+    },
+    "temperature": {
+        "critical-threshold": 80,
+        "format": " {temperatureC}°C",
+        "format-critical": " {temperatureC}°C ",
+        "tooltip": false
+    },
+    "battery": {
+        "format": " {capacity}% ",
+        "format-charging": " {capacity}%",
+        "format-critical": " {capacity}% ",
+        "tooltip": false
+    },
+    "network": {
+        "format-wifi": " {essid}",
+        "format-ethernet": " {ifname}: {ipaddr}/{cidr} ",
+        "format-disconnected": " Disconnected"
+    },
+    "clock": {
+        "format": " 󰥔 {:%I:%M %p} ",
+        "tooltip": false
+    },
+}
