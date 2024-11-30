@@ -1,0 +1,42 @@
+* {
+    border: none;
+    border-radius: 4px;
+    font-family: "JetBrainsMono Nerd Font" ;
+    font-size: 13px;
+    min-height: 3px;
+}
+
+window#waybar {
+    background-color: rgba(0, 0, 0, 0.0);
+    color: #ffffff;
+}
+
+
+/* Modules Styling */
+
+
+#network,
+#battery,
+#clock,
+#cpu,
+#memory,
+#temperature {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 0 10px;
+    margin: 6px 3px;
+    font-family: "JetBrainsMono Nerd Font", sans-serif;
+}
+
+/* Critical temperature */
+#temperature.critical {
+    background-color: #eb4d4b;
+    animation: blink 0.5s linear infinite alternate;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: #000000;
+    }
+}
