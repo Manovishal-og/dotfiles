@@ -1,0 +1,156 @@
+# : Manager {{{
+
+[manager]
+cwd = { fg = "#c4c8c5" }
+
+# Hovered
+hovered         = { fg = "#dfdfdf", bg = "#161718" }
+preview_hovered = { underline = true }
+
+# Find
+find_keyword  = { fg = "#a9a9a9", italic = true }
+find_position = { fg = "#c4c8c5", bg = "reset", italic = true }
+
+# Marker
+marker_selected = { fg = "#7f7f7f", bg = "#7f7f7f" }
+marker_copied   = { fg = "#a9a9a9", bg = "#a9a9a9" }
+marker_cut      = { fg = "#9f9f9f", bg = "#9f9f9f" }
+
+# Tab
+tab_active   = { fg = "#c4c8c5", bg = "#444444" }
+tab_inactive = { fg = "#444444", bg = "#161718" }
+tab_width    = 1
+
+# Border
+border_symbol = "│"
+border_style  = { fg = "#444444" }
+
+# Highlighting
+syntect_theme = "~/.config/yazi/monochrome.tmTheme"
+
+# : }}}
+
+
+# : Status {{{
+
+[status]
+separator_open  = ""
+separator_close = ""
+separator_style = { fg = "#444444", bg = "#444444" }
+
+# Mode
+mode_normal = { fg = "#dfdfdf", bg = "#7f7f7f", bold = true }
+mode_select = { fg = "#dfdfdf", bg = "#9f9f9f", bold = true }
+mode_unset  = { fg = "#dfdfdf", bg = "#a9a9a9", bold = true }
+
+# Progress
+progress_label  = { fg = "#dfdfdf", bold = true }
+progress_normal = { fg = "#7f7f7f", bg = "#dfdfdf" }
+progress_error  = { fg = "#9f9f9f", bg = "#dfdfdf" }
+
+# Permissions
+permissions_t = { fg = "#7f7f7f" }
+permissions_r = { fg = "#a9a9a9" }
+permissions_w = { fg = "#9f9f9f" }
+permissions_x = { fg = "#7f7f7f" }
+permissions_s = { fg = "#444444" }
+
+# : }}}
+
+
+# : Input {{{
+
+[input]
+border   = { fg = "#c4c8c5" }
+title    = {}
+value    = {}
+selected = { reversed = true }
+
+# : }}}
+
+
+# : Select {{{
+
+[select]
+border   = { fg = "#c4c8c5" }
+active   = { fg = "#a9a9a9" }
+inactive = {}
+
+# : }}}
+
+
+# : Tasks {{{
+
+[tasks]
+border  = { fg = "#c4c8c5" }
+title   = {}
+hovered = { underline = true }
+
+# : }}}
+
+
+# : Which {{{
+
+[which]
+mask            = { bg = "#161718" }
+cand            = { fg = "#7f7f7f" }
+rest            = { fg = "#c4c8c5" }
+desc            = { fg = "#a9a9a9" }
+separator       = "  "
+separator_style = { fg = "#444444" }
+
+# : }}}
+
+
+# : Help {{{
+
+[help]
+on      = { fg = "#c4c8c5" }
+exec    = { fg = "#7f7f7f" }
+desc    = { fg = "#444444" }
+hovered = { bg = "#444444", bold = true }
+footer  = { fg = "#444444", bg = "#444444"}
+
+# : }}}
+
+
+# : File-specific styles {{{
+
+# : File-specific styles {{{
+
+[filetype]
+
+rules = [
+	# Images
+	{ mime = "image/*", fg = "#a9a9a9" },
+
+	# Videos
+	{ mime = "video/*", fg = "#a9a9a9" },
+	{ mime = "audio/*", fg = "#a9a9a9" },
+
+	# Archives
+	{ mime = "application/zip",             fg = "#7f7f7f" },
+	{ mime = "application/gzip",            fg = "#7f7f7f" },
+	{ mime = "application/x-tar",           fg = "#7f7f7f" },
+	{ mime = "application/x-bzip",          fg = "#7f7f7f" },
+	{ mime = "application/x-bzip2",         fg = "#7f7f7f" },
+	{ mime = "application/x-7z-compressed", fg = "#7f7f7f" },
+	{ mime = "application/x-rar",           fg = "#7f7f7f" },
+
+	# Text files
+	{ mime = "text/*", fg = "#a9a9a9" },
+
+	# Scripts
+	{ mime = "application/x-shellscript",   fg = "#a9a9a9" },
+
+	# PDF
+	{ mime = "application/pdf",             fg = "#a9a9a9" },
+
+	# Fallback for any other file type
+	{ name = "*", fg = "#a9a9a9" },
+	{ name = "*/", fg = "#a9a9a9" }
+]
+
+# : }}}
+
+# : }}}
