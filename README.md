@@ -1,35 +1,38 @@
+# 🌿 My Hyprland Configuration
 
-# My Hyprland Configuration
+Welcome to my personal **Hyprland** configuration repository. This setup features a sleek **monochrome color scheme** that provides a minimalist yet modern aesthetic. It includes a collection of applications and themes that enhance my daily workflow and make my environment both functional and visually appealing.
 
-This repository contains my personal configuration files for **Hyprland**, a dynamic tiling Wayland compositor. The setup is designed with a **monochrome color scheme** for a minimalist and modern look. It also includes a selection of applications that I use for my daily workflow.
+---
 
-## Applications Used
+## 📦 Applications Used
 
-Here is a list of the applications included in this setup:
+Below is a list of the key applications included in this setup:
 
-- **Hyprland**: A dynamic tiling Wayland compositor.
-- **Waybar**: A customizable status bar for Wayland.
-- **Hyprpaper**: A wallpaper setter for Hyprland.
-- **Hyprlock**: A screen locker for Hyprland.
-- **Tmux**: Terminal multiplexer for managing multiple terminal sessions.
-- **Zsh**: Shell with configuration settings in `~/.zshrc`.
-- **Neovim**: Highly extensible text editor for code and text editing.
-- **Kitty**: A modern, feature-rich terminal emulator.
+- **Hyprland**: A dynamic tiling Wayland compositor for a seamless desktop experience.
+- **Waybar**: A customizable status bar for Wayland to display essential system information.
+- **Hyprpaper**: A wallpaper setter that integrates smoothly with **Hyprland**.
+- **Hyprlock**: A screen locker designed specifically for **Hyprland** environments.
+- **Tmux**: A terminal multiplexer that allows you to manage multiple terminal sessions easily.
+- **Zsh**: A shell enhanced with custom configurations (`~/.zshrc`) for productivity.
+- **Neovim**: An extensible, powerful text editor perfect for coding and text manipulation.
+- **Kitty**: A feature-rich, modern terminal emulator optimized for performance and usability.
+- **Yazi**: A lightweight and minimalist Wayland-based launcher for efficient application searching and execution.
+- **GTK Themes**: A set of elegant GTK themes that match the monochrome aesthetic, designed to create a consistent, clean look for all your GTK applications.
 
-## Features
+---
 
-- **Monochrome Color Scheme**: A sleek, black-and-white aesthetic designed for focus and minimal distraction.
-- **Tmux Setup**: A custom `tmux` configuration to handle terminal multiplexing with ease.
-- **Zsh Configuration**: Customizations for a smooth shell experience, including aliases, plugins, and themes.
+## 🌟 Features
 
-## Installation
+The setup is designed to be both functional and aesthetically pleasing. Some key features include:
 
-For Installation , I don 't give the **install.sh** . Make your own linux rice or If you know , then you know what to do
+- **Monochrome Color Scheme**: A minimalistic black-and-white color palette for better focus, free from unnecessary distractions.
+- **Tmux Setup**: A custom **tmux** configuration for managing terminal sessions with ease and efficiency.
+- **Zsh Configuration**: Customizations to make your **Zsh** shell experience smooth and intuitive, including helpful aliases, plugins, and themes.
+- **Yazi**: A super-efficient application launcher that integrates perfectly with Wayland and **Hyprland**.
+- **GTK Themes**: A set of GTK themes that blend perfectly with the monochrome aesthetic, providing a consistent look across all GTK-based applications.
 
-## Customization
+---
 
-Feel free to customize the configurations to suit your preferences. You can modify the color scheme, keybindings, or application settings to match your style.
+## ⚙️ Installation
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+For installation, I do **not** provide an **install.sh** script. If you're familiar with configuring your own **Linux rice**, you'll know what to do with the files.
