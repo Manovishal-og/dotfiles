@@ -1,6 +1,6 @@
 
 {
-    "modules-left": ["clock"],
+    "modules-left": ["clock" ,"custom/recorder" ],
     "modules-right": ["network", "cpu", "memory", "temperature", "battery"],
 
     "cpu": {
@@ -32,4 +32,13 @@
         "format": " 󰥔 {:%I:%M %p} ",
         "tooltip": false
     },
+
+	"custom/recorder": {
+		"format": " ",
+		"return-type": "json",
+		"interval": 1,
+		"exec": "echo '{\"class\": \"recording\"}'",
+		"exec-if": "pgrep wf-recorder"
+	}
 }
+
