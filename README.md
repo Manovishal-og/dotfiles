@@ -1,4 +1,3 @@
-
 # 🚀 Dotfiles
 
 This repository contains my personal configuration files for development, window management, terminals, and productivity tools.  
