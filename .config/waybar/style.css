@@ -1,0 +1,86 @@
+* {
+    border: none;
+    border-radius: 8px;
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 14px;
+    min-height: 2px;
+}
+
+window#waybar {
+    background-color: rgba(10, 10, 10, 0.0);
+    color: #00ffff; /* Cyberpunk Cyan */
+}
+/* Modules Styling */
+#custom-recorder,
+#network,
+#battery,
+#clock,
+#cpu,
+#memory,
+#temperature {
+    background-color: transparent; /* No background */
+    padding: 0 10px;
+    margin: 6px 3px;
+    font-family: "JetBrainsMono Nerd Font", sans-serif;
+    color: #00ffff; /* Cyberpunk Cyan */
+}
+
+/* Critical temperature */
+#temperature.critical {
+    background-color: #ff0033;
+    color: #ffffff;
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+    background: rgba(0, 0, 0, 0.8); /* Removed background */
+    margin: 0; /* No extra spacing */
+    padding: 0;
+    border-radius: 0;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#temperature,
+#network,
+#pulseaudio,
+#tray {
+    padding: 0 10px;
+    border-radius: 4px;
+}
+
+#clock:hover,
+#battery:hover,
+#cpu:hover,
+#memory:hover,
+#temperature:hover,
+#network:hover,
+#pulseaudio:hover {
+    background: rgba(0, 255, 255, 0.2);
+    color: #ffffff;
+}
+
+#workspaces button {
+    background: transparent;
+    font-weight: bold;
+    font-size: 13pt;
+    color: #00ffff; /* Cyberpunk Cyan */
+    border: none;
+    border-radius: 4px;
+}
+
+#workspaces button.active {
+    background: #00ffff;
+    color: #000000;
+}
+
+
+#custom-arch {
+    margin-left: 5px;
+    padding: 0;
+    font-size: 15px;
+}
+

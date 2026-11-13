@@ -1,0 +1,21 @@
+# Secrets and credentials
+.env
+.env.*
+*.secret
+secrets/
+api-keys.zsh
+
+# Private keys
+*.pem
+*.key
+
+# Shell history
+.zsh_history
+
+# Secrets
+.env
+.env.*
+*.secret
+secrets/
+api-keys.zsh
+.zsh_history
